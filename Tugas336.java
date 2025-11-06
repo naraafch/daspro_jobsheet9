@@ -12,23 +12,25 @@ public class Tugas336 {
         }
         
         System.out.println("===========================");
+        System.out.print("Cari menu: ");
+        String cari= sc.nextLine();
+
+        boolean carimenu= false;
+        int indeks=-1;
         for (int i=0; i<menu.length; i++) {
-            System.out.print("Cari menu: ");
-            String cari= sc.nextLine();
-            boolean carimenu= false;
-            int indeks;
-                if (menu[i].equalsIgnoreCase(cari)) {
-                    carimenu= true;
-                    indeks=i;
-                }
-
-                if (carimenu) {
-                    System.out.println("Menu "+cari+" tersedia");
-                } else {
-                    System.out.println("Menu tidak tersedia");
-                } 
+            if (menu[i].equalsIgnoreCase(cari)) {
+                carimenu= true;
+                indeks=i;
                 break;
+            }
+        }
 
+        System.out.println("===========================");
+        if (carimenu) {
+            System.out.println("Menu "+cari+" tersedia");
+            } else {
+            System.out.println("Menu tidak tersedia");
+            } 
         }
     }
-}
+
