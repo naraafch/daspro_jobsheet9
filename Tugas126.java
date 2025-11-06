@@ -37,6 +37,6 @@ public class Tugas126 {
         System.out.println("=======================================");
         System.out.println("Rata-rata nilai mahasiswa   : "+rata2);
         System.out.println("Nilai mahasiswa terendah    : "+nilaiTerendah);
-        System.out.println("Nilai mahsiswa tertinggi    : "+nilaiTertinggi);
+        System.out.println("Nilai mahasiswa tertinggi   : "+nilaiTertinggi);
     }
 }
