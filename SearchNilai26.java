@@ -22,9 +22,13 @@ public class SearchNilai26 {
         for(i=0; i<arrNilai.length; i++) {
             if(key==arrNilai[i]) {
                 hasil=i;
+                System.out.println("Nilai "+key+" ketemu, merupakan nilai mahaiswa ke-"+hasil);
+            } else {
+                System.out.println("Nilai yang dicari tidak ada di dalam array");
             }
+            break;
         }
-            System.out.println("Nilai "+key+" ketemu, merupakan nilai mahaiswa ke-"+hasil);
+            
         }
         
  }
